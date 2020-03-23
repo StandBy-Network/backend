@@ -1,7 +1,4 @@
-.idea/
-.gradle/
-target
-build
-*.iml
-/out/
-
+/luarocks
+/lua
+/lua_modules
+/.luarocks
