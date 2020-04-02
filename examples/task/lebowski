@@ -1,0 +1,24 @@
+abide go-bowling burn-one have-a-caucasian
+abide get-rug-back
+
+get-rug-back get-rug-from-lebowski
+@value get-rug-back 100
+@desc get-rug-back It really ties the room together
+
+get-rug-from-lebowski confirm-rug-micturator pay-ransom-for-bunny investigate-jackie-treehorn
+
+pay-ransom-for-bunny evade-nihilists give-suitcase
+
+give-suitcase dont-give-ringer
+give-suitcase wheres-the-money-lebowski
+
+dont-give-ringer damn-it-walter
+
+wheres-the-money-lebowski find-stolen-car
+
+find-stolen-car question-larry-sellers
+
+go-bowling not-about-vietnam
+go-bowling stfu-donny dont-fuck-with-the-jesus
+
+@done burn-one

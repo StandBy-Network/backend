@@ -1,0 +1,3 @@
+dependency between tasks:
+wn
+examples/task/*

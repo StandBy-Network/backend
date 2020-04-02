@@ -1,5 +1,5 @@
-local Response = require 'pegasus.response'
-local Handler = require 'pegasus.handler'
+local Response = require 'standby.http.response'
+local Handler = require 'standby.http.handler'
 
 describe('response', function()
   describe('instance', function()
@@ -61,7 +61,7 @@ describe('response', function()
     end
 
     it('should deliver proper content with status 200', function()
-      verifyOutput(200, 'Hello Pegasus World!')
+      verifyOutput(200, 'Hello Standby World!')
     end)
 
     it('should deliver error page with status 404', function()

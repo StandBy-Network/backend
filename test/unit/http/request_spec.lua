@@ -1,4 +1,4 @@
-local Request = require 'pegasus.request'
+local Request = require 'standby.http.request'
 
 describe('require', function()
   function getInstance(headers)
@@ -181,11 +181,11 @@ describe('require', function()
     it('should return a ip', function()
       local request = Request:new(8080, {
         getpeername = function(self)
-          return '192.30.252.129'
+          return '127.0.0.1'
         end
       })
 
-      assert.equal(request.ip, '192.30.252.129')
+      assert.equal(request.ip, '127.0.0.1')
     end)
   end)
 
@@ -193,7 +193,7 @@ describe('require', function()
     it('should return a port', function()
       local request = Request:new(8080, {
         getpeername = function(self)
-          return '192.30.252.129'
+          return '127.0.0.1'
         end
       })
 

@@ -20,7 +20,7 @@ local function gzip(data)
 end
 
 describe('compress #compress', function()
-  local Compress = require 'pegasus.compress'
+  local Compress = require 'standby.http.compress'
 
   describe('instance', function()
     it('should exists new method', function()

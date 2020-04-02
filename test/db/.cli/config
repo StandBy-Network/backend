@@ -1,0 +1,20 @@
+return {
+
+-- Project code name, to show in assist view.
+project = "Task - the task system",
+
+-- Default editor to open after task creation.
+editor = "$EDITOR",
+
+-- Assist in .cli/assists in following format:
+--   name - is the name of a board
+--   wip  - amount of task at the same task on a board
+--   initial - new tasks will be sticked to this board
+--   final - closed tasks will be sticked to this board
+assists = {
+    { name = "backlog", wip = 0, limit = 0, initial = true },
+    { name = "progress", wip = 3 },
+    { name = "done", wip = 0, limit = 10, final = true }
+}
+
+}

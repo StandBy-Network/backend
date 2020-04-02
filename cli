@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# \todo Replace cli script with proper binary.
+
+# Workaround to use fl locally.
+# Just copy this script to some place accessible from PATH
+# and replcase PWD with the full path to Task root dir.
+
+# Set up lua dirs to support luarocks.
+$(luarocks path)
+
+# Replace this variable with the proper address.
+PWD=$(dirname "$0")
+
+# Call Task.
+LUA_PATH="$LUA_PATH;$PWD/src/?.lua;$PWD/src/?/init.lua;$PWD/lua_modules/share/lua/5.3/?.lua;$PWD/lua_modules/share/lua/5.3/?/?.lua; " lua "$PWD/standby/task.cli.lua" "$@"

@@ -1,3 +1,4 @@
+
 describe('integration', function()
   local port = '7070'
   local url = 'http://localhost:' .. port
@@ -12,13 +13,17 @@ describe('integration', function()
 
   it('should return correct headers', function()
     local result = executeCommand('curl --head')
+	
+	-- print (result)
 
     assert.truthy(string.find(result, 'HTTP/1.1 200 OK'))
     assert.truthy(string.find(result, 'Content%-Type: text/html'))
-    assert.truthy(string.find(result, 'Content%-Length: 16'))
+    assert.truthy(string.find(result, 'Content%-Length: 40'))
   end)
 
   it('should return correct body', function()
-    assert.truthy(string.find(executeCommand('curl'), 'Hello, Pegasus'))
+	local result = executeCommand('curl')
+	-- print(result)
+    assert.truthy(string.find(result, 'Hello, Standby.Http powered by Pegasus!'))
   end)
 end)
